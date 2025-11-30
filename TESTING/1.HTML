@@ -1,0 +1,140 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In / Sign Up Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #e0e4f6;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .container {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      display: flex;
+      width: 700px;
+      margin: 40px auto;
+      overflow: hidden;
+    }
+    .form-container {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .sign-in-container {
+      background: linear-gradient(135deg, #5643fa 70%, #402ec7 100%);
+      color: #fff;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      text-align: center;
+      flex: 1;
+      padding: 40px;
+      animation: rotating 4s linear infinite;
+      
+    }
+    .sign-up-container {
+      background: #fff;
+      color: #222;
+      text-align: center;
+      flex: 1;
+      padding: 40px;
+    }
+    form h1 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+    form span {
+      font-size: 1em;
+      margin-bottom: 25px;
+      display: block;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      background: #f6f6f6;
+      border: none;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 6px;
+      width: 80%;
+      font-size: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    button {
+      margin-top: 25px;
+      background: #5643fa;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 40px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #402ec7;
+    }
+    .social-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+    .social-container button {
+      margin: 0 8px;
+      background: #f8f8f8;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2em;
+      color: #5643fa;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .social-container button:hover {
+      background: #e0e4f6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sign In -->
+    <div class="sign-in-container">
+      <form>
+        <h1>Sign In</h1>
+        <div class="social-container">
+          <button>f</button>
+          <button>G</button>
+        </div>
+        <span>or use your account</span>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button>Sign In</button>
+      </form>
+    </div>
+
+    <!-- Sign Up -->
+    <div class="sign-up-container">
+      <form>
+        <h1>Create Account</h1>
+        <div class="social-container">
+          <button>f</button>
+          <button>G</button>
+        </div>
+        <span>or use your email for registration</span>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button>Sign Up</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
