@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Sample Certificate</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<style>
+@page { size: A4 landscape; margin: 0; }
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background: #f6f7fb;
+  color: #122034;
+}
+.page {
+  width: 297mm;
+  height: 210mm;
+  padding: 24mm;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: 6px solid #d6cdbf;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  position: relative;
+  padding: 28px 40px;
+}
+.inner-border {
+  position: absolute;
+  inset: 18px;
+  border: 2px dashed rgba(18,32,52,0.06);
+  pointer-events: none;
+}
+.title {
+  text-align: center;
+  color: #083046;
+  letter-spacing: 2px;
+  font-size: 34px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+.subtitle {
+  text-align:center;
+  margin-top:6px;
+  color:#3b5563;
+  font-size:14px;
+}
+.certify {
+  text-align:center;
+  margin-top:30px;
+  color:#3b5563;
+  font-size:16px;
+}
+.name {
+  text-align:center;
+  margin-top:18px;
+  font-size:42px;
+  font-weight:700;
+  color:#09263a;
+}
+.course {
+  text-align:center;
+  margin-top:14px;
+  font-size:16px;
+  color:#364b57;
+}
+.note {
+  text-align:center;
+  margin-top:10px;
+  font-size:12px;
+  color:#a1a9ad;
+}
+.signatures {
+  margin-top:36px;
+  display:flex;
+  justify-content:flex-end;
+  gap:40px;
+  padding-right:40px;
+}
+.sig {
+  text-align:left;
+  font-size:12px;
+  color:#25343c;
+}
+.sig-line {
+  border-top:1px solid #bfb8a8;
+  width:210px;
+  margin-top:28px;
+}
+.watermark {
+  position:absolute;
+  left: -20%;
+  top: 38%;
+  transform: rotate(-22deg);
+  font-size:48px;
+  color: rgba(30,30,30,0.06);
+  font-weight:700;
+  pointer-events:none;
+  letter-spacing:6px;
+}
+.footer {
+  position:absolute;
+  bottom:20px;
+  width:100%;
+  text-align:center;
+  font-size:12px;
+  color:#7a7a7a;
+}
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <div class="inner-border"></div>
+      <div class="title">Certificate of Achievement</div>
+      <div class="subtitle">Presented by Example Academy</div>
+      <div class="certify">This certifies that</div>
+      <div class="name">VJ</div>
+      <div class="course">has successfully completed the HTML Basics Course</div>
+      <div class="note">Issued on November 30, 2025</div>
+      <div class="signatures">
+        <div class="sig">
+          <div class="sig-line"></div>
+          <p>Instructor</p>
+        </div>
+        <div class="sig">
+          <div class="sig-line"></div>
+          <p>Director</p>
+        </div>
+      </div>
+      <div class="watermark">SAMPLE</div>
+      <div class="footer">© 2025 Example Academy</div>
+    </div>
+  </div>
+</body>
+</html>
