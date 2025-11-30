@@ -1,5 +1,11 @@
-/* Container holding all cards */
-.card-container {
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+
+.container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
